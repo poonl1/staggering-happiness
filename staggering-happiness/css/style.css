@@ -1,38 +1,46 @@
-/* Genreal */
+*, :before, :after {
+    transition-duration: .2s;
+    transition-property: none;
+}
+
 html, body {
-			margin: 0;
-			padding: 0;
-			background-color: #F5F5F5; color: black
+    margin: 0;
+    padding: 0;
+    background-color: #F5F5F5; color: black
 }
 .clear {
-		clear: both;
+    clear: both;
 }
 
 .content { 
-			margin-top: 10vh;
+    margin-top: 10vh;
 			
 }
 
 /*menu*/ 
 
 #menu-box {
-			width: 100%;
-			background: #F9A825;
+    width: 100%;
+    background: #F9A825;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    position: relative;
+    z-index: 1;
 }
 
 .menu {
-		padding: 0;
-		margin: 0;
+    padding: 0;;
+    margin: 0;
 }
 
 .menu li {
-			list-style-type: none;
-			font-family: roboto;
-			color: #ffffff;
-			float: left;
-			display: block;
-			margin: 11px;
-			padding: 3px 5px;
+    list-style-type: none;
+    font-family: roboto;
+    color: #ffffff;
+    float: left;
+    display: block;
+    margin: 11px;
+    padding: 3px 5px;
+    position: relative;
 }
 
 a {
@@ -42,30 +50,29 @@ a {
 /*title*/
 
 .title {
-			width: 100%;
-			display: block;
-			background: #000;
-			height: auto;;
+    width: 100%;
+    background: #000;
+    position: relative;
 }
 
 
 .title h1 {
-		padding: 10px;
-		margin: 0;
-		margin-left: 20px;
-		color:#000; color: white;
-		font-size: 50px;
-		font-family: 'Courgette', cursive;
+    padding: 10px;
+    margin: 0;
+    margin-left: 20px;
+    color:#000; color: white;
+    font-size: 50px;
+    font-family: 'Source Sans Pro';
 }
 
 #contact-us {
-			width: 100%;
-			display: block;
-			background: #000;
-			height: 10vh;
+    width: 100%;
+    display: block;
+    background: #000;
+    height: 10vh;
 }
 
-.home-content{
+.home-content {
 		text-align: left;
 		text-indent: 30px;
 		font-family: 'Courgette', cursive;
@@ -73,7 +80,7 @@ a {
 		text-decoration:underline;
 }
 
-.faq-content{
+.faq-content {
 		text-align: center;
 		font-family: 'Courgette', cursive;
 		font-size: 150%;
@@ -89,16 +96,16 @@ a {
 }
 
 .answer{
-		text-align: left;
-        margin-left: 30px;
-        width: 700px;  
-        height: 140px;  
-        border: 2px ;  
+    text-align: left;
+    margin-left: 30px;
+    width: 700px;  
+    height: 140px;  
+    border: 2px ;  
                 
-        display: table;  
-        margin: auto;
-        font-family: 'Courgette', cursive;
-        font-size: 120%;
+    display: table;  
+    margin: auto;
+    font-family: 'Courgette', cursive;
+    font-size: 120%;
 }
 
 section[data-id] {
@@ -122,7 +129,7 @@ section[data-id].visible {
 }
 
 .home-head {
-    background-image: url("https://dc8gwjuur0w0x.cloudfront.net/lists/avatars/000/000/047/original_o-PINT-GLASS-BEER-facebook.jpg?1473216955");;
+    background-image: url("beer.jpg");
     color: #fff;
     padding: 60px;
     font-size: 1.7em;
@@ -219,46 +226,21 @@ img {
     clear: both;
 }
 
-.sidenav {
-    height: 90%;
-    width: 163px;
-    padding: auto;
-    position: absolute;
-    z-index: 1;
-    top: 77px;
-    left: 100;
-    background-color:#00897B ;
-    overflow-x: hidden;
-}
-
-
-/* Side navigation links */
-.sidenav a {
-    color: white;
-    font-family: roboto;
-    margin: 20px;
-    padding: 15px;
-    text-decoration: none;
-    display: block;
-}
-
-/* hover color */
-.sidenav a:hover {
-    color: black;
-}
-
 input[name=search] {
-    width: 700px;
-    margin-top: 40px;
+    width: 300px;
+    length: 8px;
+    margin-top: 3px;
     box-sizing: border-box;
     border: 2px solid #ccc;
     border-radius: 4px;
     font-size: 16px;
-    margin-left: 20px;
     background-color: white;
     background-position: 10px 10px; 
     background-repeat: no-repeat;
-    padding: 12px 20px 12px 20px;
+    padding: 8px 20px 8px 20px;
+    margin-right: 20px;
+    float: right;
+    font-family: roboto;
 }
 
 input[name=login] {
@@ -362,10 +344,6 @@ legend {
   transition: background-color .3s;
 }
 
-.btn:hover, .btn:focus {
-  background-color: #f9A825;
-}
-
 .btn span {
   display: block;
   padding: 12px 24px;
@@ -381,3 +359,101 @@ textarea {
     color: black;
     font-size: 20px;
 }
+
+table {
+    font-family: 'roboto';
+    width: 95%;
+    border-collapse: collapse;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+td, th {
+    border: 1px solid;
+    padding: 15px;
+}
+
+
+.postit-content iframe {
+    margin-left:0;
+    width: 92%;
+    height: 605px;
+    margin: 60px;
+}
+
+.dropbtn {
+    background-color: #F9A825;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 0px;
+    font-family: roboto;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    min-width: 140px;
+    position: absolute;
+    background-color: #f9f9f9;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.game-content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 900px;
+}
+
+.gnh-main {
+    display: flex;
+}
+
+.gnh-photo {
+    float: right;
+    display: inline;
+    position: relative;
+    float: right;
+    height: auto;
+    width: auto;
+    margin: 12px;
+    
+}
+
+.gnh-content {
+    font-size: 18px;
+    margin-left: 30px;
+    flex: 1;
+    font-family: courgette;
+    margin-right: 10px;
+}
+
+.gnh-content-2 {
+    clear: both;
+    text-align: center;
+    font-family: courgette;
+    font-size: 20px;
+}
+
+.gnh-content-2 img {
+    width: 30px;
+    height: 40px;
+}
+
