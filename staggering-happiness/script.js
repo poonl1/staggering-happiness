@@ -1,3 +1,11 @@
+    function handle(e){
+        if(e.keyCode === 13) {
+            window.location.href = "index.html#home";
+        }
+
+        return false;
+    }
+
 var sectionElems = document.querySelectorAll("section[data-id]");
 var navAElems = document.querySelectorAll("nav a[href]");
 
